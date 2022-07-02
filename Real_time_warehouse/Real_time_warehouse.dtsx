@@ -1,0 +1,1668 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="9/8/2017 1:13:19 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="FTI-GREA1-N3709"
+  DTS:CreatorName="FTI-GREA1-N3709\athdga"
+  DTS:DTSID="{9D038B0E-A23B-4BB2-A09F-80DA265EB1BF}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="14.0.0800.90"
+  DTS:LocaleID="2057"
+  DTS:ObjectName="Real_time_warehouse"
+  DTS:PackageType="5"
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{5CB12C86-B708-460F-AE80-2C9AA5C2B547}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[10.10.14.34.GwGLog_Warehouse.ssis_usr]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{95BDC369-76AE-4B0D-8806-5D23ABC3CCD1}"
+      DTS:ObjectName="10.10.14.34.GwGLog_Warehouse.ssis_usr">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=10.10.14.34;User ID=ssis_usr;Initial Catalog=GwGLog_Warehouse;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAW6QnFJJMGkGix5vCBk8I+AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACCE8NHYp2K5ZkATXM7iUXK8FyjOMYPwGTFmeAC6bC2eQAAAAAOgAAAAAIAACAAAAA6Fv+xKqZL5TiDG32Fulef1gqpm+YQdvfcBZFgt9y1CxAAAADf9b0OHeZrzvM96hDkd8kzQAAAANqJdYGonKjxEM/DUYSlupugAGJBSZrwJF007un2ZimJY7O4B9z12WFFdgoqQuE7O4SwJvtveMvXVGy8EtuTcrc</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[10.10.14.64\GR.My_GR_Search_2011.DB_AMS01_GR_DA]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{D6CA0FFC-3A5E-4BC4-B5F5-AD5CA9820ADF}"
+      DTS:ObjectName="10.10.14.64\GR.My_GR_Search_2011.DB_AMS01_GR_DA">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=10.10.14.64\GR;User ID=DB_AMS01_GR_DA;Initial Catalog=My_GR_Search_2011;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAW6QnFJJMGkGix5vCBk8I+AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACkRsIKb8GyOdVgwxyKvvvqd0W6fxTjNGKNvvgTi7V/pwAAAAAOgAAAAAIAACAAAACeZJYUQGzVIlYPLdb/YKVJl3e6834vTRSr/aRE6ClFUiAAAAAe4Q8sz4Rbp2vEgG94uksnM149VRGXInuSS0h52ofdKkAAAACTcCmZBvNFUmodgv5VAgiwEzGofir147IhNUIVgAGI8dNC+Uj/sHl+LLnNg+YXyoreg5B4hVKLauWDSp61DN96</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[10.10.14.81\OM.My_OM_Search_2011.DB_AMS01_OM_DA]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{206C4C5F-F00F-46C6-86BC-4B4C231EA52A}"
+      DTS:ObjectName="10.10.14.81\OM.My_OM_Search_2011.DB_AMS01_OM_DA">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=10.10.14.81\OM;User ID=DB_AMS01_OM_DA;Initial Catalog=My_OM_Search_2011;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAW6QnFJJMGkGix5vCBk8I+AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACnmTf/yi3f2fZiTdMnr1+Nk0susPjH8+Ke+5smzQ0lOQAAAAAOgAAAAAIAACAAAAD7FSYqgYIcyBtSzQUXWdgNSiSQoOObWtUxAZkt9uaAxSAAAACrHWBlBZNodLDlH+2ZswgeRzAbCvocb99vGvDI+mJsfkAAAAC7eMvbGl8Iu2w/5+ojyxc4TxT8sLAlf/B6YPM3gx5CJR2pLEoZw0n9NpRPTlypfTfyspMCDJhdkfpc0Ij+CTLg</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Real Time Import"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{E9A00B2F-C185-4A9D-A447-C75B65B093CF}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Real Time Import"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Real Time Import\GR"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="GR"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT LogID,'GR' db_source,CreateDate,ProcessDuration,XMLType,XMLUserName,RequestXML,AppInfo FROM Src_XMLLogs WHERE CONVERT(date, CreateDate) &gt; = DATEADD(day, DATEDIFF(day, 0, GETDATE()), 0) - 4</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Real Time Import\GR.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[10.10.14.64\GR.My_GR_Search_2011.DB_AMS01_GR_DA]"
+                  connectionManagerRefId="Package.ConnectionManagers[10.10.14.64\GR.My_GR_Search_2011.DB_AMS01_GR_DA]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Real Time Import\GR.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].Columns[LogID]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].ExternalColumns[LogID]"
+                      lineageId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].Columns[LogID]"
+                      name="LogID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].Columns[db_source]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].ExternalColumns[db_source]"
+                      length="2"
+                      lineageId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].Columns[db_source]"
+                      name="db_source"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].Columns[CreateDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].ExternalColumns[CreateDate]"
+                      lineageId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].Columns[CreateDate]"
+                      name="CreateDate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].Columns[ProcessDuration]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].ExternalColumns[ProcessDuration]"
+                      lineageId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].Columns[ProcessDuration]"
+                      name="ProcessDuration"
+                      precision="18"
+                      scale="4"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].Columns[XMLType]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].ExternalColumns[XMLType]"
+                      length="30"
+                      lineageId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].Columns[XMLType]"
+                      name="XMLType"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].Columns[XMLUserName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].ExternalColumns[XMLUserName]"
+                      length="30"
+                      lineageId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].Columns[XMLUserName]"
+                      name="XMLUserName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].Columns[RequestXML]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].ExternalColumns[RequestXML]"
+                      lineageId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].Columns[RequestXML]"
+                      name="RequestXML"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].Columns[AppInfo]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].ExternalColumns[AppInfo]"
+                      length="100"
+                      lineageId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].Columns[AppInfo]"
+                      name="AppInfo"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].ExternalColumns[LogID]"
+                      dataType="i8"
+                      name="LogID" />
+                    <externalMetadataColumn
+                      refId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].ExternalColumns[db_source]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      name="db_source" />
+                    <externalMetadataColumn
+                      refId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].ExternalColumns[CreateDate]"
+                      dataType="dbTimeStamp"
+                      name="CreateDate" />
+                    <externalMetadataColumn
+                      refId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].ExternalColumns[ProcessDuration]"
+                      dataType="numeric"
+                      name="ProcessDuration"
+                      precision="18"
+                      scale="4" />
+                    <externalMetadataColumn
+                      refId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].ExternalColumns[XMLType]"
+                      dataType="wstr"
+                      length="30"
+                      name="XMLType" />
+                    <externalMetadataColumn
+                      refId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].ExternalColumns[XMLUserName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      name="XMLUserName" />
+                    <externalMetadataColumn
+                      refId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].ExternalColumns[RequestXML]"
+                      dataType="nText"
+                      name="RequestXML" />
+                    <externalMetadataColumn
+                      refId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].ExternalColumns[AppInfo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="AppInfo" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Real Time Import\GR.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Real Time Import\GR.Outputs[OLE DB Source Error Output].Columns[LogID]"
+                      dataType="i8"
+                      lineageId="Package\Real Time Import\GR.Outputs[OLE DB Source Error Output].Columns[LogID]"
+                      name="LogID" />
+                    <outputColumn
+                      refId="Package\Real Time Import\GR.Outputs[OLE DB Source Error Output].Columns[db_source]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      lineageId="Package\Real Time Import\GR.Outputs[OLE DB Source Error Output].Columns[db_source]"
+                      name="db_source" />
+                    <outputColumn
+                      refId="Package\Real Time Import\GR.Outputs[OLE DB Source Error Output].Columns[CreateDate]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Real Time Import\GR.Outputs[OLE DB Source Error Output].Columns[CreateDate]"
+                      name="CreateDate" />
+                    <outputColumn
+                      refId="Package\Real Time Import\GR.Outputs[OLE DB Source Error Output].Columns[ProcessDuration]"
+                      dataType="numeric"
+                      lineageId="Package\Real Time Import\GR.Outputs[OLE DB Source Error Output].Columns[ProcessDuration]"
+                      name="ProcessDuration"
+                      precision="18"
+                      scale="4" />
+                    <outputColumn
+                      refId="Package\Real Time Import\GR.Outputs[OLE DB Source Error Output].Columns[XMLType]"
+                      dataType="wstr"
+                      length="30"
+                      lineageId="Package\Real Time Import\GR.Outputs[OLE DB Source Error Output].Columns[XMLType]"
+                      name="XMLType" />
+                    <outputColumn
+                      refId="Package\Real Time Import\GR.Outputs[OLE DB Source Error Output].Columns[XMLUserName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      lineageId="Package\Real Time Import\GR.Outputs[OLE DB Source Error Output].Columns[XMLUserName]"
+                      name="XMLUserName" />
+                    <outputColumn
+                      refId="Package\Real Time Import\GR.Outputs[OLE DB Source Error Output].Columns[RequestXML]"
+                      dataType="nText"
+                      lineageId="Package\Real Time Import\GR.Outputs[OLE DB Source Error Output].Columns[RequestXML]"
+                      name="RequestXML" />
+                    <outputColumn
+                      refId="Package\Real Time Import\GR.Outputs[OLE DB Source Error Output].Columns[AppInfo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Real Time Import\GR.Outputs[OLE DB Source Error Output].Columns[AppInfo]"
+                      name="AppInfo" />
+                    <outputColumn
+                      refId="Package\Real Time Import\GR.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Real Time Import\GR.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Real Time Import\GR.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Real Time Import\GR.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Real Time Import\GR Lookup"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="GR Lookup"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select [LogID]
+      ,[db_source]
+      ,[Createdate]
+      ,[response_time]
+      ,[xmltype]
+      ,[xmlusername]
+      ,[requestxml]
+      ,[AppInfo]
+  FROM [GwGLog_Warehouse].[dbo].[GwGLogs] where [db_source]='GR'</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select [LogID]
+      ,[db_source]
+      ,[Createdate]
+      ,[response_time]
+      ,[xmltype]
+      ,[xmlusername]
+      ,[requestxml]
+      ,[AppInfo]
+  FROM [GwGLog_Warehouse].[dbo].[GwGLogs] where [db_source]='GR') [refTable]
+where [refTable].[LogID] = ? and [refTable].[db_source] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="LogID" dataType="DT_I8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="db_source" dataType="DT_STR" length="4" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Createdate" dataType="DT_DBTIMESTAMP2" length="0" precision="0" scale="3" codePage="0"/&gt;&lt;referenceColumn name="response_time" dataType="DT_NUMERIC" length="0" precision="18" scale="4" codePage="0"/&gt;&lt;referenceColumn name="xmltype" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="xmlusername" dataType="DT_STR" length="30" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="requestxml" dataType="DT_NTEXT" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="AppInfo" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Real Time Import\GR.Outputs[OLE DB Source Output].Columns[LogID]};#{Package\Real Time Import\GR.Outputs[OLE DB Source Output].Columns[db_source]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Real Time Import\GR Lookup.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[10.10.14.34.GwGLog_Warehouse.ssis_usr]"
+                  connectionManagerRefId="Package.ConnectionManagers[10.10.14.34.GwGLog_Warehouse.ssis_usr]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Real Time Import\GR Lookup.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Real Time Import\GR Lookup.Inputs[Lookup Input].Columns[LogID]"
+                      cachedDataType="i8"
+                      cachedName="LogID"
+                      lineageId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].Columns[LogID]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">LogID</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Real Time Import\GR Lookup.Inputs[Lookup Input].Columns[db_source]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="2"
+                      cachedName="db_source"
+                      lineageId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].Columns[db_source]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">db_source</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Real Time Import\GR Lookup.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Real Time Import\GR Lookup.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Real Time Import\GR Lookup.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Real Time Import\GR Lookup.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Real Time Import\GR Lookup.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Real Time Import\GR Lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Real Time Import\GR Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Real Time Import\GR Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Real Time Import\GR Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Real Time Import\GR Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Real Time Import\GwG Warehouse from GR"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="GwG Warehouse from GR"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[GwGLogs]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Real Time Import\GwG Warehouse from GR.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[10.10.14.34.GwGLog_Warehouse.ssis_usr]"
+                  connectionManagerRefId="Package.ConnectionManagers[10.10.14.34.GwGLog_Warehouse.ssis_usr]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Real Time Import\GwG Warehouse from GR.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Real Time Import\GwG Warehouse from GR.Inputs[OLE DB Destination Input].Columns[LogID]"
+                      cachedDataType="i8"
+                      cachedName="LogID"
+                      externalMetadataColumnId="Package\Real Time Import\GwG Warehouse from GR.Inputs[OLE DB Destination Input].ExternalColumns[LogID]"
+                      lineageId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].Columns[LogID]" />
+                    <inputColumn
+                      refId="Package\Real Time Import\GwG Warehouse from GR.Inputs[OLE DB Destination Input].Columns[db_source]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="2"
+                      cachedName="db_source"
+                      externalMetadataColumnId="Package\Real Time Import\GwG Warehouse from GR.Inputs[OLE DB Destination Input].ExternalColumns[db_source]"
+                      lineageId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].Columns[db_source]" />
+                    <inputColumn
+                      refId="Package\Real Time Import\GwG Warehouse from GR.Inputs[OLE DB Destination Input].Columns[CreateDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="CreateDate"
+                      externalMetadataColumnId="Package\Real Time Import\GwG Warehouse from GR.Inputs[OLE DB Destination Input].ExternalColumns[Createdate]"
+                      lineageId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].Columns[CreateDate]" />
+                    <inputColumn
+                      refId="Package\Real Time Import\GwG Warehouse from GR.Inputs[OLE DB Destination Input].Columns[XMLType]"
+                      cachedDataType="wstr"
+                      cachedLength="30"
+                      cachedName="XMLType"
+                      externalMetadataColumnId="Package\Real Time Import\GwG Warehouse from GR.Inputs[OLE DB Destination Input].ExternalColumns[xmltype]"
+                      lineageId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].Columns[XMLType]" />
+                    <inputColumn
+                      refId="Package\Real Time Import\GwG Warehouse from GR.Inputs[OLE DB Destination Input].Columns[XMLUserName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="30"
+                      cachedName="XMLUserName"
+                      externalMetadataColumnId="Package\Real Time Import\GwG Warehouse from GR.Inputs[OLE DB Destination Input].ExternalColumns[xmlusername]"
+                      lineageId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].Columns[XMLUserName]" />
+                    <inputColumn
+                      refId="Package\Real Time Import\GwG Warehouse from GR.Inputs[OLE DB Destination Input].Columns[RequestXML]"
+                      cachedDataType="nText"
+                      cachedName="RequestXML"
+                      externalMetadataColumnId="Package\Real Time Import\GwG Warehouse from GR.Inputs[OLE DB Destination Input].ExternalColumns[requestxml]"
+                      lineageId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].Columns[RequestXML]" />
+                    <inputColumn
+                      refId="Package\Real Time Import\GwG Warehouse from GR.Inputs[OLE DB Destination Input].Columns[AppInfo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="AppInfo"
+                      externalMetadataColumnId="Package\Real Time Import\GwG Warehouse from GR.Inputs[OLE DB Destination Input].ExternalColumns[AppInfo]"
+                      lineageId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].Columns[AppInfo]" />
+                    <inputColumn
+                      refId="Package\Real Time Import\GwG Warehouse from GR.Inputs[OLE DB Destination Input].Columns[ProcessDuration]"
+                      cachedDataType="numeric"
+                      cachedName="ProcessDuration"
+                      cachedPrecision="18"
+                      cachedScale="4"
+                      externalMetadataColumnId="Package\Real Time Import\GwG Warehouse from GR.Inputs[OLE DB Destination Input].ExternalColumns[response_time]"
+                      lineageId="Package\Real Time Import\GR.Outputs[OLE DB Source Output].Columns[ProcessDuration]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Real Time Import\GwG Warehouse from GR.Inputs[OLE DB Destination Input].ExternalColumns[PK_ID]"
+                      dataType="i8"
+                      name="PK_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Real Time Import\GwG Warehouse from GR.Inputs[OLE DB Destination Input].ExternalColumns[LogID]"
+                      dataType="i8"
+                      name="LogID" />
+                    <externalMetadataColumn
+                      refId="Package\Real Time Import\GwG Warehouse from GR.Inputs[OLE DB Destination Input].ExternalColumns[db_source]"
+                      codePage="1252"
+                      dataType="str"
+                      length="4"
+                      name="db_source" />
+                    <externalMetadataColumn
+                      refId="Package\Real Time Import\GwG Warehouse from GR.Inputs[OLE DB Destination Input].ExternalColumns[Createdate]"
+                      dataType="dbTimeStamp2"
+                      name="Createdate"
+                      scale="3" />
+                    <externalMetadataColumn
+                      refId="Package\Real Time Import\GwG Warehouse from GR.Inputs[OLE DB Destination Input].ExternalColumns[response_time]"
+                      dataType="numeric"
+                      name="response_time"
+                      precision="18"
+                      scale="4" />
+                    <externalMetadataColumn
+                      refId="Package\Real Time Import\GwG Warehouse from GR.Inputs[OLE DB Destination Input].ExternalColumns[xmltype]"
+                      dataType="wstr"
+                      length="30"
+                      name="xmltype" />
+                    <externalMetadataColumn
+                      refId="Package\Real Time Import\GwG Warehouse from GR.Inputs[OLE DB Destination Input].ExternalColumns[xmlusername]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      name="xmlusername" />
+                    <externalMetadataColumn
+                      refId="Package\Real Time Import\GwG Warehouse from GR.Inputs[OLE DB Destination Input].ExternalColumns[requestxml]"
+                      dataType="nText"
+                      name="requestxml" />
+                    <externalMetadataColumn
+                      refId="Package\Real Time Import\GwG Warehouse from GR.Inputs[OLE DB Destination Input].ExternalColumns[AppInfo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="AppInfo" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Real Time Import\GwG Warehouse from GR.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Real Time Import\GwG Warehouse from GR.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Real Time Import\GwG Warehouse from GR.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Real Time Import\GwG Warehouse from GR.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Real Time Import\GwG Warehouse from GR.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Real Time Import\GwG Warehouse from GR.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Real Time Import\GwG Warehouse from OM"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="GwG Warehouse from OM"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[GwGLogs]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Real Time Import\GwG Warehouse from OM.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[10.10.14.34.GwGLog_Warehouse.ssis_usr]"
+                  connectionManagerRefId="Package.ConnectionManagers[10.10.14.34.GwGLog_Warehouse.ssis_usr]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Real Time Import\GwG Warehouse from OM.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Real Time Import\GwG Warehouse from OM.Inputs[OLE DB Destination Input].Columns[LogID]"
+                      cachedDataType="i8"
+                      cachedName="LogID"
+                      externalMetadataColumnId="Package\Real Time Import\GwG Warehouse from OM.Inputs[OLE DB Destination Input].ExternalColumns[LogID]"
+                      lineageId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].Columns[LogID]" />
+                    <inputColumn
+                      refId="Package\Real Time Import\GwG Warehouse from OM.Inputs[OLE DB Destination Input].Columns[db_source]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="2"
+                      cachedName="db_source"
+                      externalMetadataColumnId="Package\Real Time Import\GwG Warehouse from OM.Inputs[OLE DB Destination Input].ExternalColumns[db_source]"
+                      lineageId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].Columns[db_source]" />
+                    <inputColumn
+                      refId="Package\Real Time Import\GwG Warehouse from OM.Inputs[OLE DB Destination Input].Columns[CreateDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="CreateDate"
+                      externalMetadataColumnId="Package\Real Time Import\GwG Warehouse from OM.Inputs[OLE DB Destination Input].ExternalColumns[Createdate]"
+                      lineageId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].Columns[CreateDate]" />
+                    <inputColumn
+                      refId="Package\Real Time Import\GwG Warehouse from OM.Inputs[OLE DB Destination Input].Columns[XMLType]"
+                      cachedDataType="wstr"
+                      cachedLength="30"
+                      cachedName="XMLType"
+                      externalMetadataColumnId="Package\Real Time Import\GwG Warehouse from OM.Inputs[OLE DB Destination Input].ExternalColumns[xmltype]"
+                      lineageId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].Columns[XMLType]" />
+                    <inputColumn
+                      refId="Package\Real Time Import\GwG Warehouse from OM.Inputs[OLE DB Destination Input].Columns[XMLUserName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="30"
+                      cachedName="XMLUserName"
+                      externalMetadataColumnId="Package\Real Time Import\GwG Warehouse from OM.Inputs[OLE DB Destination Input].ExternalColumns[xmlusername]"
+                      lineageId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].Columns[XMLUserName]" />
+                    <inputColumn
+                      refId="Package\Real Time Import\GwG Warehouse from OM.Inputs[OLE DB Destination Input].Columns[RequestXML]"
+                      cachedDataType="nText"
+                      cachedName="RequestXML"
+                      externalMetadataColumnId="Package\Real Time Import\GwG Warehouse from OM.Inputs[OLE DB Destination Input].ExternalColumns[requestxml]"
+                      lineageId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].Columns[RequestXML]" />
+                    <inputColumn
+                      refId="Package\Real Time Import\GwG Warehouse from OM.Inputs[OLE DB Destination Input].Columns[AppInfo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="AppInfo"
+                      externalMetadataColumnId="Package\Real Time Import\GwG Warehouse from OM.Inputs[OLE DB Destination Input].ExternalColumns[AppInfo]"
+                      lineageId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].Columns[AppInfo]" />
+                    <inputColumn
+                      refId="Package\Real Time Import\GwG Warehouse from OM.Inputs[OLE DB Destination Input].Columns[ProcessDuration]"
+                      cachedDataType="numeric"
+                      cachedName="ProcessDuration"
+                      cachedPrecision="18"
+                      cachedScale="4"
+                      externalMetadataColumnId="Package\Real Time Import\GwG Warehouse from OM.Inputs[OLE DB Destination Input].ExternalColumns[response_time]"
+                      lineageId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].Columns[ProcessDuration]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Real Time Import\GwG Warehouse from OM.Inputs[OLE DB Destination Input].ExternalColumns[PK_ID]"
+                      dataType="i8"
+                      name="PK_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Real Time Import\GwG Warehouse from OM.Inputs[OLE DB Destination Input].ExternalColumns[LogID]"
+                      dataType="i8"
+                      name="LogID" />
+                    <externalMetadataColumn
+                      refId="Package\Real Time Import\GwG Warehouse from OM.Inputs[OLE DB Destination Input].ExternalColumns[db_source]"
+                      codePage="1252"
+                      dataType="str"
+                      length="4"
+                      name="db_source" />
+                    <externalMetadataColumn
+                      refId="Package\Real Time Import\GwG Warehouse from OM.Inputs[OLE DB Destination Input].ExternalColumns[Createdate]"
+                      dataType="dbTimeStamp2"
+                      name="Createdate"
+                      scale="3" />
+                    <externalMetadataColumn
+                      refId="Package\Real Time Import\GwG Warehouse from OM.Inputs[OLE DB Destination Input].ExternalColumns[response_time]"
+                      dataType="numeric"
+                      name="response_time"
+                      precision="18"
+                      scale="4" />
+                    <externalMetadataColumn
+                      refId="Package\Real Time Import\GwG Warehouse from OM.Inputs[OLE DB Destination Input].ExternalColumns[xmltype]"
+                      dataType="wstr"
+                      length="30"
+                      name="xmltype" />
+                    <externalMetadataColumn
+                      refId="Package\Real Time Import\GwG Warehouse from OM.Inputs[OLE DB Destination Input].ExternalColumns[xmlusername]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      name="xmlusername" />
+                    <externalMetadataColumn
+                      refId="Package\Real Time Import\GwG Warehouse from OM.Inputs[OLE DB Destination Input].ExternalColumns[requestxml]"
+                      dataType="nText"
+                      name="requestxml" />
+                    <externalMetadataColumn
+                      refId="Package\Real Time Import\GwG Warehouse from OM.Inputs[OLE DB Destination Input].ExternalColumns[AppInfo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="AppInfo" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Real Time Import\GwG Warehouse from OM.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Real Time Import\GwG Warehouse from OM.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Real Time Import\GwG Warehouse from OM.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Real Time Import\GwG Warehouse from OM.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Real Time Import\GwG Warehouse from OM.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Real Time Import\GwG Warehouse from OM.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Real Time Import\OM"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OM"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT LogID,'OM' db_source,CreateDate,ProcessDuration,XMLType,XMLUserName,RequestXML,AppInfo FROM Src_XMLLogs WHERE CONVERT(date, CreateDate) &gt; = DATEADD(day, DATEDIFF(day, 0, GETDATE()), 0) - 4</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Real Time Import\OM.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[10.10.14.81\OM.My_OM_Search_2011.DB_AMS01_OM_DA]"
+                  connectionManagerRefId="Package.ConnectionManagers[10.10.14.81\OM.My_OM_Search_2011.DB_AMS01_OM_DA]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Real Time Import\OM.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].Columns[LogID]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].ExternalColumns[LogID]"
+                      lineageId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].Columns[LogID]"
+                      name="LogID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].Columns[db_source]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].ExternalColumns[db_source]"
+                      length="2"
+                      lineageId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].Columns[db_source]"
+                      name="db_source"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].Columns[CreateDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].ExternalColumns[CreateDate]"
+                      lineageId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].Columns[CreateDate]"
+                      name="CreateDate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].Columns[ProcessDuration]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].ExternalColumns[ProcessDuration]"
+                      lineageId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].Columns[ProcessDuration]"
+                      name="ProcessDuration"
+                      precision="18"
+                      scale="4"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].Columns[XMLType]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].ExternalColumns[XMLType]"
+                      length="30"
+                      lineageId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].Columns[XMLType]"
+                      name="XMLType"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].Columns[XMLUserName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].ExternalColumns[XMLUserName]"
+                      length="30"
+                      lineageId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].Columns[XMLUserName]"
+                      name="XMLUserName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].Columns[RequestXML]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].ExternalColumns[RequestXML]"
+                      lineageId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].Columns[RequestXML]"
+                      name="RequestXML"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].Columns[AppInfo]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].ExternalColumns[AppInfo]"
+                      length="100"
+                      lineageId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].Columns[AppInfo]"
+                      name="AppInfo"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].ExternalColumns[LogID]"
+                      dataType="i8"
+                      name="LogID" />
+                    <externalMetadataColumn
+                      refId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].ExternalColumns[db_source]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      name="db_source" />
+                    <externalMetadataColumn
+                      refId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].ExternalColumns[CreateDate]"
+                      dataType="dbTimeStamp"
+                      name="CreateDate" />
+                    <externalMetadataColumn
+                      refId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].ExternalColumns[ProcessDuration]"
+                      dataType="numeric"
+                      name="ProcessDuration"
+                      precision="18"
+                      scale="4" />
+                    <externalMetadataColumn
+                      refId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].ExternalColumns[XMLType]"
+                      dataType="wstr"
+                      length="30"
+                      name="XMLType" />
+                    <externalMetadataColumn
+                      refId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].ExternalColumns[XMLUserName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      name="XMLUserName" />
+                    <externalMetadataColumn
+                      refId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].ExternalColumns[RequestXML]"
+                      dataType="nText"
+                      name="RequestXML" />
+                    <externalMetadataColumn
+                      refId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].ExternalColumns[AppInfo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="AppInfo" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Real Time Import\OM.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Real Time Import\OM.Outputs[OLE DB Source Error Output].Columns[LogID]"
+                      dataType="i8"
+                      lineageId="Package\Real Time Import\OM.Outputs[OLE DB Source Error Output].Columns[LogID]"
+                      name="LogID" />
+                    <outputColumn
+                      refId="Package\Real Time Import\OM.Outputs[OLE DB Source Error Output].Columns[db_source]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      lineageId="Package\Real Time Import\OM.Outputs[OLE DB Source Error Output].Columns[db_source]"
+                      name="db_source" />
+                    <outputColumn
+                      refId="Package\Real Time Import\OM.Outputs[OLE DB Source Error Output].Columns[CreateDate]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Real Time Import\OM.Outputs[OLE DB Source Error Output].Columns[CreateDate]"
+                      name="CreateDate" />
+                    <outputColumn
+                      refId="Package\Real Time Import\OM.Outputs[OLE DB Source Error Output].Columns[ProcessDuration]"
+                      dataType="numeric"
+                      lineageId="Package\Real Time Import\OM.Outputs[OLE DB Source Error Output].Columns[ProcessDuration]"
+                      name="ProcessDuration"
+                      precision="18"
+                      scale="4" />
+                    <outputColumn
+                      refId="Package\Real Time Import\OM.Outputs[OLE DB Source Error Output].Columns[XMLType]"
+                      dataType="wstr"
+                      length="30"
+                      lineageId="Package\Real Time Import\OM.Outputs[OLE DB Source Error Output].Columns[XMLType]"
+                      name="XMLType" />
+                    <outputColumn
+                      refId="Package\Real Time Import\OM.Outputs[OLE DB Source Error Output].Columns[XMLUserName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      lineageId="Package\Real Time Import\OM.Outputs[OLE DB Source Error Output].Columns[XMLUserName]"
+                      name="XMLUserName" />
+                    <outputColumn
+                      refId="Package\Real Time Import\OM.Outputs[OLE DB Source Error Output].Columns[RequestXML]"
+                      dataType="nText"
+                      lineageId="Package\Real Time Import\OM.Outputs[OLE DB Source Error Output].Columns[RequestXML]"
+                      name="RequestXML" />
+                    <outputColumn
+                      refId="Package\Real Time Import\OM.Outputs[OLE DB Source Error Output].Columns[AppInfo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\Real Time Import\OM.Outputs[OLE DB Source Error Output].Columns[AppInfo]"
+                      name="AppInfo" />
+                    <outputColumn
+                      refId="Package\Real Time Import\OM.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Real Time Import\OM.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Real Time Import\OM.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Real Time Import\OM.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Real Time Import\OM Lookup"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="OM Lookup"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select [LogID]
+      ,[db_source]
+      ,[Createdate]
+      ,[response_time]
+      ,[xmltype]
+      ,[xmlusername]
+      ,[requestxml]
+      ,[AppInfo]
+  FROM [GwGLog_Warehouse].[dbo].[GwGLogs] where [db_source]='OM'</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select [LogID]
+      ,[db_source]
+      ,[Createdate]
+      ,[response_time]
+      ,[xmltype]
+      ,[xmlusername]
+      ,[requestxml]
+      ,[AppInfo]
+  FROM [GwGLog_Warehouse].[dbo].[GwGLogs] where [db_source]='OM') [refTable]
+where [refTable].[LogID] = ? and [refTable].[db_source] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="LogID" dataType="DT_I8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="db_source" dataType="DT_STR" length="4" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Createdate" dataType="DT_DBTIMESTAMP2" length="0" precision="0" scale="3" codePage="0"/&gt;&lt;referenceColumn name="response_time" dataType="DT_NUMERIC" length="0" precision="18" scale="4" codePage="0"/&gt;&lt;referenceColumn name="xmltype" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="xmlusername" dataType="DT_STR" length="30" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="requestxml" dataType="DT_NTEXT" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="AppInfo" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Real Time Import\OM.Outputs[OLE DB Source Output].Columns[LogID]};#{Package\Real Time Import\OM.Outputs[OLE DB Source Output].Columns[db_source]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Real Time Import\OM Lookup.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[10.10.14.34.GwGLog_Warehouse.ssis_usr]"
+                  connectionManagerRefId="Package.ConnectionManagers[10.10.14.34.GwGLog_Warehouse.ssis_usr]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Real Time Import\OM Lookup.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Real Time Import\OM Lookup.Inputs[Lookup Input].Columns[LogID]"
+                      cachedDataType="i8"
+                      cachedName="LogID"
+                      lineageId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].Columns[LogID]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">LogID</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Real Time Import\OM Lookup.Inputs[Lookup Input].Columns[db_source]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="2"
+                      cachedName="db_source"
+                      lineageId="Package\Real Time Import\OM.Outputs[OLE DB Source Output].Columns[db_source]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">db_source</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Real Time Import\OM Lookup.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Real Time Import\OM Lookup.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Real Time Import\OM Lookup.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Real Time Import\OM Lookup.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Real Time Import\OM Lookup.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Real Time Import\OM Lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Real Time Import\OM Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Real Time Import\OM Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Real Time Import\OM Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Real Time Import\OM Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Real Time Import.Paths[Lookup No Match Output]"
+              endId="Package\Real Time Import\GwG Warehouse from OM.Inputs[OLE DB Destination Input]"
+              name="Lookup No Match Output"
+              startId="Package\Real Time Import\OM Lookup.Outputs[Lookup No Match Output]" />
+            <path
+              refId="Package\Real Time Import.Paths[Lookup No Match Output1]"
+              endId="Package\Real Time Import\GwG Warehouse from GR.Inputs[OLE DB Destination Input]"
+              name="Lookup No Match Output"
+              startId="Package\Real Time Import\GR Lookup.Outputs[Lookup No Match Output]" />
+            <path
+              refId="Package\Real Time Import.Paths[OLE DB Source Output]"
+              endId="Package\Real Time Import\OM Lookup.Inputs[Lookup Input]"
+              name="OLE DB Source Output"
+              startId="Package\Real Time Import\OM.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Real Time Import.Paths[OLE DB Source Output1]"
+              endId="Package\Real Time Import\GR Lookup.Inputs[Lookup Input]"
+              name="OLE DB Source Output"
+              startId="Package\Real Time Import\GR.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Real Time Import"
+          TopLeft="93,53" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Real Time Import">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="97,42"
+          Id="Package\Real Time Import\OM"
+          TopLeft="123,19" />
+        <NodeLayout
+          Size="95,42"
+          Id="Package\Real Time Import\GR"
+          TopLeft="852,21" />
+        <NodeLayout
+          Size="134,42"
+          Id="Package\Real Time Import\OM Lookup"
+          TopLeft="340,81" />
+        <NodeLayout
+          Size="204,42"
+          Id="Package\Real Time Import\GwG Warehouse from OM"
+          TopLeft="128,333" />
+        <EdgeLayout
+          Id="Package\Real Time Import.Paths[OLE DB Source Output]"
+          TopLeft="220,40">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="120,62"
+              Start="0,0"
+              End="112.5,62">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="56,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="56,0"
+                    Point2="60,0"
+                    Point3="60,4" />
+                  <mssgle:LineSegment
+                    End="60,58" />
+                  <mssgle:CubicBezierSegment
+                    Point1="60,58"
+                    Point2="60,62"
+                    Point3="64,62" />
+                  <mssgle:LineSegment
+                    End="112.5,62" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="132,42"
+          Id="Package\Real Time Import\GR Lookup"
+          TopLeft="568,84" />
+        <EdgeLayout
+          Id="Package\Real Time Import.Paths[OLE DB Source Output1]"
+          TopLeft="852,42">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-152,63"
+              Start="0,0"
+              End="-144.5,63">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-72,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-72,0"
+                    Point2="-76,0"
+                    Point3="-76,4" />
+                  <mssgle:LineSegment
+                    End="-76,59" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-76,59"
+                    Point2="-76,63"
+                    Point3="-80,63" />
+                  <mssgle:LineSegment
+                    End="-144.5,63" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Real Time Import.Paths[Lookup No Match Output]"
+          TopLeft="407,123">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-177,210"
+              Start="0,0"
+              End="-177,202.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,101" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,101"
+                    Point2="0,105"
+                    Point3="-4,105" />
+                  <mssgle:LineSegment
+                    End="-173,105" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-173,105"
+                    Point2="-177,105"
+                    Point3="-177,109" />
+                  <mssgle:LineSegment
+                    End="-177,202.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-144.30638671875,110,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="202,42"
+          Id="Package\Real Time Import\GwG Warehouse from GR"
+          TopLeft="684,333" />
+        <EdgeLayout
+          Id="Package\Real Time Import.Paths[Lookup No Match Output1]"
+          TopLeft="634,126">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="151,207"
+              Start="0,0"
+              End="151,199.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,99.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,99.5"
+                    Point2="0,103.5"
+                    Point3="4,103.5" />
+                  <mssgle:LineSegment
+                    End="147,103.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="147,103.5"
+                    Point2="151,103.5"
+                    Point3="151,107.5" />
+                  <mssgle:LineSegment
+                    End="151,199.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="19.69361328125,108.5,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Real Time Import\OM">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Real Time Import\GR">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Real Time Import\OM Lookup">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string"></Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Real Time Import\GwG Warehouse from OM">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Real Time Import\GR Lookup">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string"></Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Real Time Import\GwG Warehouse from GR">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
