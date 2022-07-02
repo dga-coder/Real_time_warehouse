@@ -17,13 +17,13 @@
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[10.10.14.34.GwGLog_Warehouse.ssis_usr]"
+      DTS:refId="Package.ConnectionManagers[xx.xx.xx.xx.Log_Warehouse.ssis_usr]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{95BDC369-76AE-4B0D-8806-5D23ABC3CCD1}"
-      DTS:ObjectName="10.10.14.34.GwGLog_Warehouse.ssis_usr">
+      DTS:ObjectName="xx.xx.xx.xx.Log_Warehouse.ssis_usr">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=10.10.14.34;User ID=ssis_usr;Initial Catalog=GwGLog_Warehouse;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=xx.xx.xx.xx;User ID=ssis_usr;Initial Catalog=Log_Warehouse;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
@@ -32,13 +32,13 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[10.10.14.64\GR.My_GR_Search_2011.DB_AMS01_GR_DA]"
+      DTS:refId="Package.ConnectionManagers[xx.xx.xx.xx\xx.dbname.dbuser]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{D6CA0FFC-3A5E-4BC4-B5F5-AD5CA9820ADF}"
-      DTS:ObjectName="10.10.14.64\GR.My_GR_Search_2011.DB_AMS01_GR_DA">
+      DTS:ObjectName="xx.xx.xx.xx\xx.dbname.dbuser">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=10.10.14.64\GR;User ID=DB_AMS01_GR_DA;Initial Catalog=My_GR_Search_2011;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=xx.xx.xx.xx\xx;User ID=dbuser;Initial Catalog=My_GR_Search_2011;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
@@ -47,13 +47,13 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[10.10.14.81\OM.My_OM_Search_2011.DB_AMS01_OM_DA]"
+      DTS:refId="Package.ConnectionManagers[xx.xx.xx.xx\xx.dbname.dbuser]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{206C4C5F-F00F-46C6-86BC-4B4C231EA52A}"
-      DTS:ObjectName="10.10.14.81\OM.My_OM_Search_2011.DB_AMS01_OM_DA">
+      DTS:ObjectName="xx.xx.xx.xx\xx.dbname.dbuser">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=10.10.14.81\OM;User ID=DB_AMS01_OM_DA;Initial Catalog=My_OM_Search_2011;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=xx.xx.xx.xx\xx;User ID=dbuser;Initial Catalog=My_OM_Search_2011;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
@@ -129,8 +129,8 @@
               <connections>
                 <connection
                   refId="Package\Real Time Import\GR.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[10.10.14.64\GR.My_GR_Search_2011.DB_AMS01_GR_DA]"
-                  connectionManagerRefId="Package.ConnectionManagers[10.10.14.64\GR.My_GR_Search_2011.DB_AMS01_GR_DA]"
+                  connectionManagerID="Package.ConnectionManagers[xx.xx.xx.xx\xx.dbname.dbuser]"
+                  connectionManagerRefId="Package.ConnectionManagers[xx.xx.xx.xx\xx.dbname.dbuser]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -423,8 +423,8 @@ where [refTable].[LogID] = ? and [refTable].[db_source] = ?</property>
               <connections>
                 <connection
                   refId="Package\Real Time Import\GR Lookup.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[10.10.14.34.GwGLog_Warehouse.ssis_usr]"
-                  connectionManagerRefId="Package.ConnectionManagers[10.10.14.34.GwGLog_Warehouse.ssis_usr]"
+                  connectionManagerID="Package.ConnectionManagers[xx.xx.xx.xx.Log_Warehouse.ssis_usr]"
+                  connectionManagerRefId="Package.ConnectionManagers[xx.xx.xx.xx.Log_Warehouse.ssis_usr]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -571,8 +571,8 @@ where [refTable].[LogID] = ? and [refTable].[db_source] = ?</property>
               <connections>
                 <connection
                   refId="Package\Real Time Import\GwG Warehouse from GR.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[10.10.14.34.GwGLog_Warehouse.ssis_usr]"
-                  connectionManagerRefId="Package.ConnectionManagers[10.10.14.34.GwGLog_Warehouse.ssis_usr]"
+                  connectionManagerID="Package.ConnectionManagers[xx.xx.xx.xx.Log_Warehouse.ssis_usr]"
+                  connectionManagerRefId="Package.ConnectionManagers[xx.xx.xx.xx.Log_Warehouse.ssis_usr]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -777,8 +777,8 @@ where [refTable].[LogID] = ? and [refTable].[db_source] = ?</property>
               <connections>
                 <connection
                   refId="Package\Real Time Import\GwG Warehouse from OM.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[10.10.14.34.GwGLog_Warehouse.ssis_usr]"
-                  connectionManagerRefId="Package.ConnectionManagers[10.10.14.34.GwGLog_Warehouse.ssis_usr]"
+                  connectionManagerID="Package.ConnectionManagers[xx.xx.xx.xx.Log_Warehouse.ssis_usr]"
+                  connectionManagerRefId="Package.ConnectionManagers[xx.xx.xx.xx.Log_Warehouse.ssis_usr]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -975,8 +975,8 @@ where [refTable].[LogID] = ? and [refTable].[db_source] = ?</property>
               <connections>
                 <connection
                   refId="Package\Real Time Import\OM.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[10.10.14.81\OM.My_OM_Search_2011.DB_AMS01_OM_DA]"
-                  connectionManagerRefId="Package.ConnectionManagers[10.10.14.81\OM.My_OM_Search_2011.DB_AMS01_OM_DA]"
+                  connectionManagerID="Package.ConnectionManagers[xx.xx.xx.xx\xx.dbname.dbuser]"
+                  connectionManagerRefId="Package.ConnectionManagers[xx.xx.xx.xx\xx.dbname.dbuser]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1269,8 +1269,8 @@ where [refTable].[LogID] = ? and [refTable].[db_source] = ?</property>
               <connections>
                 <connection
                   refId="Package\Real Time Import\OM Lookup.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[10.10.14.34.GwGLog_Warehouse.ssis_usr]"
-                  connectionManagerRefId="Package.ConnectionManagers[10.10.14.34.GwGLog_Warehouse.ssis_usr]"
+                  connectionManagerID="Package.ConnectionManagers[xx.xx.xx.xx.Log_Warehouse.ssis_usr]"
+                  connectionManagerRefId="Package.ConnectionManagers[xx.xx.xx.xx.Log_Warehouse.ssis_usr]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
