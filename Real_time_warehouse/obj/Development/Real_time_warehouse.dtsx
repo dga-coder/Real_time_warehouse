@@ -38,7 +38,7 @@
       DTS:ObjectName="xx.xx.xx.xx\xx.dbname.dbuser">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=xx.xx.xx.xx\xx;User ID=dbuser;Initial Catalog=My_GR_Search_2011;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=xx.xx.xx.xx\xx;User ID=dbuser;Initial Catalog=dbname;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
@@ -53,7 +53,7 @@
       DTS:ObjectName="xx.xx.xx.xx\xx.dbname.dbuser">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=xx.xx.xx.xx\xx;User ID=dbuser;Initial Catalog=My_OM_Search_2011;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=xx.xx.xx.xx\xx;User ID=dbuser;Initial Catalog=dbname;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
